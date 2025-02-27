@@ -55,6 +55,8 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 
 vim.keymap.set("n", "<a-v>", "<C-v>", {})
 
+vim.keymap.set("n", "<leader>ts", "<CMD>Screenkey<CR>", { desc = "[T]oggle [S]creenkey" })
+
 vim.api.nvim_create_autocmd("TextYankPost", {
 	desc = "Highlight when yanking (copying) text",
 	group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
