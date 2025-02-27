@@ -35,7 +35,7 @@ return {
 		{
 			"sindrets/diffview.nvim",
 			opts = {
-				use_icons = false,
+				use_icons = vim.g.have_nerd_font,
 			},
 			dependencies = {
 				"nvim-tree/nvim-web-devicons",
