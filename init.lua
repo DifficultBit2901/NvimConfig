@@ -538,6 +538,17 @@ require("lazy").setup({
 				},
 				n_lines = 500,
 			})
+
+			require("mini.animate").setup({
+				cursor = {
+					enabled = false,
+				},
+				scroll = {
+					timing = function()
+						return 2
+					end,
+				},
+			})
 		end,
 	},
 	{ -- Highlight, edit, and navigate code
