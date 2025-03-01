@@ -30,16 +30,5 @@ return { -- Collection of various small independent plugins/modules
 			},
 			n_lines = 500,
 		})
-
-		require("mini.animate").setup({
-			cursor = {
-				enabled = false,
-			},
-			scroll = {
-				timing = function()
-					return 2
-				end,
-			},
-		})
 	end,
 }
