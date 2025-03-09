@@ -6,7 +6,7 @@ Config files for Neovim that i use personally
 * cmp-path 
 * cmp_luasnip 
 * conform.nvim 
-* fidget.nvim 
+* nvim-lsp-notify
 * gitsigns.nvim 
 * hex.nvim 
 * hexer.nvim 
@@ -37,7 +37,6 @@ Config files for Neovim that i use personally
 * telescope.nvim 
 * tinted-vim 
 * todo-comments.nvim 
-* transparent.nvim 
 * undo-glow.nvim 
 * undotree 
 * which-key.nvim 
