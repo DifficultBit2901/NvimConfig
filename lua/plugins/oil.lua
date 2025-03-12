@@ -7,7 +7,7 @@ return {
 			columns = {
 				"icon",
 				-- "permissions",
-				"size",
+				-- "size",
 				-- "mtime",
 			},
 			skip_confirm_for_simple_edits = true,
