@@ -6,6 +6,7 @@ vim.g.have_nerd_font = true
 -- setup keybinds
 require("keybinds").setup()
 require("options").setup()
+require("highlight_groups").setup()
 
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
