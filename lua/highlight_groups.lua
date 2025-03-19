@@ -17,8 +17,6 @@ function hg.setup()
 	vim.api.nvim_set_hl(0, "CmpItemKindKeyword", { bg = "NONE", fg = "#D4D4D4", force = true })
 	vim.api.nvim_set_hl(0, "CmpItemKindProperty", { link = "CmpItemKindKeyword", force = true })
 	vim.api.nvim_set_hl(0, "CmpItemKindUnit", { link = "CmpItemKindKeyword", force = true })
-
-	vim.api.nvim_set_hl(0, "CmpItemMenu", { bg = "#D4D4D4", force = true })
 end
 
 return hg
