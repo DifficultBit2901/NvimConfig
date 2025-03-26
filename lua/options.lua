@@ -11,7 +11,8 @@ function options.setup()
 	vim.opt.number = true
 	vim.wo.relativenumber = true
 
-	vim.opt.cursorline = false
+	vim.opt.cursorline = true
+	vim.opt.cursorcolumn = true
 
 	vim.opt.signcolumn = "yes"
 
