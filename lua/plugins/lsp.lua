@@ -4,16 +4,8 @@ return {
 		{ "williamboman/mason.nvim", config = true },
 		"williamboman/mason-lspconfig.nvim",
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
-		{
-			"mrded/nvim-lsp-notify",
-			requires = { "rcarriga/nvim-notify" },
-			config = function()
-				require("lsp-notify").setup({
-					notify = require("notify"),
-				})
-			end,
-		},
-		-- { "j-hui/fidget.nvim", opts = {} },
+
+		{ "j-hui/fidget.nvim", opts = {} },
 
 		"hrsh7th/cmp-nvim-lsp",
 	},
