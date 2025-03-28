@@ -13,12 +13,6 @@ return {
 		cmdline = {
 			format = {
 				filter = { pattern = "^:%s*!", icon = "", lang = "bash", title = "Terminal" },
-				substitution = {
-					pattern = "^:%s*[%d,;%%]+%s*s",
-					icon = "",
-					lang = "regex",
-					title = "Substitution",
-				},
 			},
 		},
 		messages = {
