@@ -7,10 +7,10 @@ return {
 		local hop = require("hop")
 		hop.setup({ keys = "fjdkslaghrueiwoqpvncm" })
 		local directions = require("hop.hint").HintDirection
-		vim.keymap.set("", "t", function()
+		vim.keymap.set("", "f", function()
 			hop.hint_char1({ direction = directions.AFTER_CURSOR })
 		end, { remap = true })
-		vim.keymap.set("", "T", function()
+		vim.keymap.set("", "F", function()
 			hop.hint_char1({ direction = directions.BEFORE_CURSOR })
 		end, { remap = true })
 		vim.keymap.set("", "<leader>hw", function()
