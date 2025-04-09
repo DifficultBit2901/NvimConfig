@@ -6,7 +6,7 @@ return {
 		statusline.setup({
 			options = {
 				icons_enabled = vim.g.have_nerd_font,
-				theme = "dracula",
+				theme = "auto",
 			},
 			sections = {
 				lualine_a = { "mode" },

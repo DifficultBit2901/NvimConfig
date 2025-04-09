@@ -1,8 +1,8 @@
 return {
-	"tinted-theming/tinted-vim",
+	"scottmckendry/cyberdream.nvim",
 	priority = 1000, -- Make sure to load this before all the other start plugins.
 	init = function()
-		vim.cmd.colorscheme("base24-dracula")
+		vim.cmd.colorscheme("cyberdream")
 
 		vim.cmd.hi("Comment gui=none")
 	end,
