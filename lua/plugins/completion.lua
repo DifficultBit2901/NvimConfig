@@ -34,7 +34,6 @@ return { -- Autocompletion
 		"hrsh7th/cmp-nvim-lsp",
 		"hrsh7th/cmp-path",
 		"onsails/lspkind.nvim",
-		"kdheepak/cmp-latex-symbols",
 	},
 	config = function()
 		-- See `:help cmp`
@@ -114,12 +113,6 @@ return { -- Autocompletion
 				{ name = "nvim_lsp" },
 				{ name = "luasnip" },
 				{ name = "path" },
-				{
-					name = "latex_symbols",
-					option = {
-						strategy = 2, -- mixed
-					},
-				},
 			},
 		})
 	end,
