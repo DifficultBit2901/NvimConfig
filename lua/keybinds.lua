@@ -18,6 +18,18 @@ function keybinds.setup()
 
 	set("n", "<leader>st", "<CMD>TodoTelescope<CR>", { desc = "[S]earch [T]odo" })
 	set("n", "<leader>xt", "<CMD>TodoTrouble<CR>", { desc = "Todos (Trouble)" })
+
+	set("x", "<leader>re", ":Refactor extract ")
+	set("x", "<leader>rf", ":Refactor extract_to_file ")
+
+	set("x", "<leader>rv", ":Refactor extract_var ")
+
+	set({ "n", "x" }, "<leader>ri", ":Refactor inline_var")
+
+	set("n", "<leader>rI", ":Refactor inline_func")
+
+	set("n", "<leader>rb", ":Refactor extract_block")
+	set("n", "<leader>rbf", ":Refactor extract_block_to_file")
 end
 
 return keybinds
