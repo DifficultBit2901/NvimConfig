@@ -15,7 +15,6 @@ function keybinds.setup()
 	set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 	set("n", "<leader>tu", vim.cmd.UndotreeToggle, { desc = "[T]oggle [U]ndoTree" })
-	set("n", "<leader>tt", vim.cmd.TransparentToggle, { desc = "[T]oggle [T]ransparency" })
 
 	set("n", "<leader>st", "<CMD>TodoTelescope<CR>", { desc = "[S]earch [T]odo" })
 	set("n", "<leader>xt", "<CMD>TodoTrouble<CR>", { desc = "Todos (Trouble)" })
