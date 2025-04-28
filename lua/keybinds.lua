@@ -19,17 +19,28 @@ function keybinds.setup()
 	set("n", "<leader>st", "<CMD>TodoTelescope<CR>", { desc = "[S]earch [T]odo" })
 	set("n", "<leader>xt", "<CMD>TodoTrouble<CR>", { desc = "Todos (Trouble)" })
 
-	set("x", "<leader>re", ":Refactor extract ")
-	set("x", "<leader>rf", ":Refactor extract_to_file ")
+	set({ "n", "x" }, "<leader>re", function()
+		return require("refactoring").refactor("Extract Function")
+	end, { expr = true, desc = "[R]efactor [E]xtract Function" })
+	set({ "n", "x" }, "<leader>rf", function()
+		return require("refactoring").refactor("Extract Function To File")
+	end, { expr = true, desc = "[R]efactor Extract to [F]ile" })
+	set({ "n", "x" }, "<leader>rv", function()
+		return require("refactoring").refactor("Extract Variable")
+	end, { expr = true, desc = "[R]efactor Extract [V]ariable" })
+	set({ "n", "x" }, "<leader>rI", function()
+		return require("refactoring").refactor("Inline Function")
+	end, { expr = true, desc = "[R]efactor [I]nline Function" })
+	set({ "n", "x" }, "<leader>ri", function()
+		return require("refactoring").refactor("Inline Variable")
+	end, { expr = true, desc = "[R]efactor [I]nline Variable" })
 
-	set("x", "<leader>rv", ":Refactor extract_var ")
-
-	set({ "n", "x" }, "<leader>ri", ":Refactor inline_var")
-
-	set("n", "<leader>rI", ":Refactor inline_func")
-
-	set("n", "<leader>rb", ":Refactor extract_block")
-	set("n", "<leader>rbf", ":Refactor extract_block_to_file")
+	set({ "n", "x" }, "<leader>rbb", function()
+		return require("refactoring").refactor("Extract Block")
+	end, { expr = true, desc = "[R]efactor Extract [B]lock" })
+	set({ "n", "x" }, "<leader>rbf", function()
+		return require("refactoring").refactor("Extract Block To File")
+	end, { expr = true, desc = "[R]efactor Extract [B]lock to [F]ile" })
 end
 
 return keybinds
