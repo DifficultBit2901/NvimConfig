@@ -5,7 +5,7 @@ return {
 	config = function()
 		-- place this in one of your configuration file(s)
 		local hop = require("hop")
-		hop.setup({ keys = "fjdkslaghrueiwoqpvncm" })
+		hop.setup({ keys = "fjdkghruvn" })
 		local directions = require("hop.hint").HintDirection
 		vim.keymap.set("", "f", function()
 			hop.hint_char1()
